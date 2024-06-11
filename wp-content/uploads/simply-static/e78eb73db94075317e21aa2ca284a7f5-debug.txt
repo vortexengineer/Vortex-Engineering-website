@@ -1,30 +1,557 @@
-[2024-06-11 06:09:43] [class-ss-archive-creation-job.php:83] Starting a job; no job is presently running
-[2024-06-11 06:09:43] [class-ss-archive-creation-job.php:84] Here's our task list: setup, fetch_urls, generate_404, create_zip_archive, wrapup
-[2024-06-11 06:09:44] [class-ss-archive-creation-job.php:102] Pushing first task to queue: setup
-[2024-06-11 06:09:45] [class-ss-admin-settings.php:584] Received request to cancel static archive generation
-[2024-06-11 06:09:45] [class-ss-archive-creation-job.php:221] Cancelling job; job is not done
-[2024-06-11 06:09:45] [class-ss-archive-creation-job.php:232] The queue isn't empty; overwriting current task with a cancel task
-[2024-06-11 06:09:46] [class-ss-archive-creation-job.php:136] Current task: cancel
-[2024-06-11 06:09:46] [class-ss-archive-creation-job.php:153] Performing task: cancel
-[2024-06-11 06:09:46] [class-ss-task.php:44] Status message: [cancel] Cancelling job
-[2024-06-11 06:09:46] [class-ss-archive-creation-job.php:136] Current task: cancel
-[2024-06-11 06:09:46] [class-ss-archive-creation-job.php:153] Performing task: cancel
-[2024-06-11 06:09:46] [class-ss-task.php:44] Status message: [cancel] Cancelling job
-[2024-06-11 06:09:47] [class-ss-wrapup-task.php:22] Deleting temporary files
-[2024-06-11 06:09:47] [class-ss-task.php:44] Status message: [wrapup] Wrapping up
-[2024-06-11 06:09:47] [class-ss-archive-creation-job.php:170] This task is done and there are no more tasks, time to complete the job
-[2024-06-11 06:09:47] [class-ss-wrapup-task.php:22] Deleting temporary files
-[2024-06-11 06:09:47] [class-ss-task.php:44] Status message: [wrapup] Wrapping up
-[2024-06-11 06:09:47] [class-ss-archive-creation-job.php:170] This task is done and there are no more tasks, time to complete the job
-[2024-06-11 06:09:47] [class-ss-archive-creation-job.php:197] Completing the job
-[2024-06-11 06:09:47] [class-ss-archive-creation-job.php:324] Status message: [done] Done! Finished in 00:00:04
-[2024-06-11 06:09:47] [class-ss-archive-creation-job.php:197] Completing the job
-[2024-06-11 06:09:47] [class-ss-archive-creation-job.php:324] Status message: [done] Done! Finished in 00:00:04
-[2024-06-11 06:10:12] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website
-[2024-06-11 06:10:12] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website
-[2024-06-11 06:10:13] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website
-[2024-06-11 06:10:14] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website
-[2024-06-11 06:10:15] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website
-[2024-06-11 06:10:16] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website
-[2024-06-11 06:10:20] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website
-[2024-06-11 06:10:20] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website
+[2024-06-11 06:21:10] [class-ss-archive-creation-job.php:83] Starting a job; no job is presently running
+[2024-06-11 06:21:10] [class-ss-archive-creation-job.php:84] Here's our task list: setup, fetch_urls, generate_404, transfer_files_locally, wrapup
+[2024-06-11 06:21:11] [class-ss-archive-creation-job.php:102] Pushing first task to queue: setup
+[2024-06-11 06:21:13] [class-ss-archive-creation-job.php:136] Current task: setup
+[2024-06-11 06:21:13] [class-ss-archive-creation-job.php:153] Performing task: setup
+[2024-06-11 06:21:13] [class-ss-task.php:44] Status message: [setup] Setting up
+[2024-06-11 06:21:14] [class-ss-setup-task.php:33] Creating archive directory: C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870\
+[2024-06-11 06:21:14] [class-ss-setup-task.php:72] Adding origin URL to queue: http://localhost/vortex-engineering-website/
+[2024-06-11 06:21:14] [class-ss-setup-task.php:137] File C:\xampp\htdocs\Vortex-Engineering-website\wp-content\plugins\simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js exists; adding to queue as: C:/xampp/htdocs/Vortex-Engineering-website/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js
+[2024-06-11 06:21:14] [class-ss-archive-creation-job.php:175] We've found our next task: fetch_urls
+[2024-06-11 06:21:14] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
+[2024-06-11 06:21:14] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
+[2024-06-11 06:21:14] [class-ss-fetch-urls-task.php:69] Total pages: 2; Pages remaining: 2
+[2024-06-11 06:21:14] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/
+[2024-06-11 06:21:14] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 2
+[2024-06-11 06:21:14] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:14] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecdab3c2b-9CXoZs.tmp
+[2024-06-11 06:21:14] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/?simply_static_page=1
+[2024-06-11 06:21:14] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/?simply_static_page=1
+[2024-06-11 06:21:15] [class-ss-url-fetcher.php:103] Filesize: 85429 bytes
+[2024-06-11 06:21:15] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2024-06-11 06:21:15] [class-ss-url-fetcher.php:233] New filename for static page: /index.html
+[2024-06-11 06:21:15] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecdab3c2b-9CXoZs.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/index.html
+[2024-06-11 06:21:15] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:17] [class-ss-fetch-urls-task.php:159] Adding 20 URLs to the queue
+[2024-06-11 06:21:20] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:20] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: EJÕ¸∑çé∏~:#Oï∞˛,…⁄¬K
+[2024-06-11 06:21:20] [class-ss-page.php:118] Checking Content Identical:454acdfcb78d8eb87e3a234f95b0fe2cc9dac24b===. Value: FALSE
+[2024-06-11 06:21:20] [class-ss-fetch-urls-task.php:72] URL: C:/xampp/htdocs/Vortex-Engineering-website/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js
+[2024-06-11 06:21:20] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 2
+[2024-06-11 06:21:20] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:20] [class-ss-url-fetcher.php:83] Not fetching URL because it is not a local URL
+[2024-06-11 06:21:20] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 0 of 2 pages/files
+[2024-06-11 06:21:20] [class-ss-archive-creation-job.php:181] We're not done with the fetch_urls task yet
+[2024-06-11 06:21:20] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
+[2024-06-11 06:21:20] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
+[2024-06-11 06:21:20] [class-ss-fetch-urls-task.php:69] Total pages: 22; Pages remaining: 20
+[2024-06-11 06:21:20] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website
+[2024-06-11 06:21:20] [class-ss-task.php:58] [PAGES STATUS] Remaining:20; Total: 22
+[2024-06-11 06:21:20] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:20] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ece0e2f97-wcyI9W.tmp
+[2024-06-11 06:21:20] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website?simply_static_page=3
+[2024-06-11 06:21:20] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website?simply_static_page=3
+[2024-06-11 06:21:20] [class-ss-url-fetcher.php:103] Filesize: 372 bytes
+[2024-06-11 06:21:20] [class-ss-url-fetcher.php:119] http_status_code: 301 | content_type: text/html; charset=iso-8859-1
+[2024-06-11 06:21:20] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-06-11 06:21:20] [class-ss-fetch-urls-task.php:205] redirect_url: http://localhost/vortex-engineering-website/
+[2024-06-11 06:21:20] [class-ss-fetch-urls-task.php:214] This is a redirect to a trailing slashed version of the same page; adding new URL to the queue
+[2024-06-11 06:21:20] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/index.php/sample-page/
+[2024-06-11 06:21:20] [class-ss-task.php:58] [PAGES STATUS] Remaining:19; Total: 22
+[2024-06-11 06:21:21] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:21] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ece1080e1-QhI6MO.tmp
+[2024-06-11 06:21:21] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/index.php/sample-page/?simply_static_page=4
+[2024-06-11 06:21:21] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/index.php/sample-page/?simply_static_page=4
+[2024-06-11 06:21:21] [class-ss-url-fetcher.php:103] Filesize: 60651 bytes
+[2024-06-11 06:21:21] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2024-06-11 06:21:21] [class-ss-url-fetcher.php:233] New filename for static page: /index.php/sample-page/index.html
+[2024-06-11 06:21:21] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ece1080e1-QhI6MO.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/index.php/sample-page/index.html
+[2024-06-11 06:21:21] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:23] [class-ss-fetch-urls-task.php:159] Adding 18 URLs to the queue
+[2024-06-11 06:21:24] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:24] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: ÜõÊÖ£≤Ä)πA∑Ô*F⁄CÛó
+[2024-06-11 06:21:24] [class-ss-page.php:118] Checking Content Identical:869be685a301b28029b94116b7ef2a46da43f397===. Value: FALSE
+[2024-06-11 06:21:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/index.php/2024/06/11/hello-world/
+[2024-06-11 06:21:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:18; Total: 22
+[2024-06-11 06:21:24] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:24] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ece42cc3e-LN1V1b.tmp
+[2024-06-11 06:21:24] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/index.php/2024/06/11/hello-world/?simply_static_page=5
+[2024-06-11 06:21:24] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/index.php/2024/06/11/hello-world/?simply_static_page=5
+[2024-06-11 06:21:25] [class-ss-url-fetcher.php:103] Filesize: 78095 bytes
+[2024-06-11 06:21:25] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2024-06-11 06:21:25] [class-ss-url-fetcher.php:233] New filename for static page: /index.php/2024/06/11/hello-world/index.html
+[2024-06-11 06:21:25] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ece42cc3e-LN1V1b.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/index.php/2024/06/11/hello-world/index.html
+[2024-06-11 06:21:25] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:28] [class-ss-fetch-urls-task.php:159] Adding 22 URLs to the queue
+[2024-06-11 06:21:30] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:30] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: Ÿ:n€ƒ'çœ€w}Ù∑iYQ
+[2024-06-11 06:21:30] [class-ss-page.php:118] Checking Content Identical:d93a6e7fdbc4278d13cfdb777df4b71316695951===. Value: FALSE
+[2024-06-11 06:21:30] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/index.php/author/vortex/
+[2024-06-11 06:21:30] [class-ss-task.php:58] [PAGES STATUS] Remaining:17; Total: 22
+[2024-06-11 06:21:30] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:30] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecea53353-5Wvkt4.tmp
+[2024-06-11 06:21:30] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/index.php/author/vortex/?simply_static_page=6
+[2024-06-11 06:21:30] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/index.php/author/vortex/?simply_static_page=6
+[2024-06-11 06:21:31] [class-ss-url-fetcher.php:103] Filesize: 64683 bytes
+[2024-06-11 06:21:31] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2024-06-11 06:21:31] [class-ss-url-fetcher.php:233] New filename for static page: /index.php/author/vortex/index.html
+[2024-06-11 06:21:31] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecea53353-5Wvkt4.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/index.php/author/vortex/index.html
+[2024-06-11 06:21:31] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:33] [class-ss-fetch-urls-task.php:159] Adding 18 URLs to the queue
+[2024-06-11 06:21:33] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:33] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: FAçı«fp/Ü'E‡oÊ¨`˚
+[2024-06-11 06:21:33] [class-ss-page.php:118] Checking Content Identical:4611418d0bf51bc766702f862745e06fe6ac60fb===. Value: FALSE
+[2024-06-11 06:21:34] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/index.php/category/uncategorized/
+[2024-06-11 06:21:34] [class-ss-task.php:58] [PAGES STATUS] Remaining:16; Total: 22
+[2024-06-11 06:21:35] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:35] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecef05a6f-KcsUPx.tmp
+[2024-06-11 06:21:35] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/index.php/category/uncategorized/?simply_static_page=7
+[2024-06-11 06:21:35] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/index.php/category/uncategorized/?simply_static_page=7
+[2024-06-11 06:21:35] [class-ss-url-fetcher.php:103] Filesize: 57415 bytes
+[2024-06-11 06:21:35] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2024-06-11 06:21:35] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-06-11 06:21:36] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecf0a502c-tc3TPY.tmp
+[2024-06-11 06:21:36] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/index.php/category/uncategorized/
+[2024-06-11 06:21:37] [class-ss-url-fetcher.php:103] Filesize: 57415 bytes
+[2024-06-11 06:21:37] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2024-06-11 06:21:37] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/images/building-exterior.webp
+[2024-06-11 06:21:38] [class-ss-task.php:58] [PAGES STATUS] Remaining:15; Total: 22
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecf225f4c-ycyyZg.tmp
+[2024-06-11 06:21:38] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/images/building-exterior.webp?simply_static_page=8
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/images/building-exterior.webp?simply_static_page=8
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:103] Filesize: 199724 bytes
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/webp
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/twentytwentyfour/assets/images/building-exterior.webp
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecf225f4c-ycyyZg.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/wp-content/themes/twentytwentyfour/assets/images/building-exterior.webp
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: høñÍßŒ2£-âœ˘ﬂwr
+[2024-06-11 06:21:38] [class-ss-page.php:118] Checking Content Identical:6804bf960deaa7ce32a32d8908cff9df0b157772===. Value: FALSE
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/images/tourist-and-building.webp
+[2024-06-11 06:21:38] [class-ss-task.php:58] [PAGES STATUS] Remaining:14; Total: 22
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecf2582d2-YYuCYe.tmp
+[2024-06-11 06:21:38] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/images/tourist-and-building.webp?simply_static_page=9
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/images/tourist-and-building.webp?simply_static_page=9
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:103] Filesize: 66482 bytes
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/webp
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/twentytwentyfour/assets/images/tourist-and-building.webp
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecf2582d2-YYuCYe.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/wp-content/themes/twentytwentyfour/assets/images/tourist-and-building.webp
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: ],l”ÿ“ƒ(7bÄs‰Q%w‰
+[2024-06-11 06:21:38] [class-ss-page.php:118] Checking Content Identical:5d2c6cd3d8d2c412281237628073e451257716e4===. Value: FALSE
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/images/windows.webp
+[2024-06-11 06:21:38] [class-ss-task.php:58] [PAGES STATUS] Remaining:13; Total: 22
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecf289388-P0HRLZ.tmp
+[2024-06-11 06:21:38] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/images/windows.webp?simply_static_page=10
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/images/windows.webp?simply_static_page=10
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:103] Filesize: 126244 bytes
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/webp
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/twentytwentyfour/assets/images/windows.webp
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecf289388-P0HRLZ.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/wp-content/themes/twentytwentyfour/assets/images/windows.webp
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: £(O{^∆Ñ!√U˛*Âk0cöû
+[2024-06-11 06:21:38] [class-ss-page.php:118] Checking Content Identical:18a3284f7b5ec684211dc355fe2ae56b30639a9e===. Value: FALSE
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/wp-includes/blocks/navigation/view.min.js
+[2024-06-11 06:21:38] [class-ss-task.php:58] [PAGES STATUS] Remaining:12; Total: 22
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecf2c2073-OUneX3.tmp
+[2024-06-11 06:21:38] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/wp-includes/blocks/navigation/view.min.js?simply_static_page=11
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/wp-includes/blocks/navigation/view.min.js?simply_static_page=11
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:103] Filesize: 3300 bytes
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/blocks/navigation/view.min.js
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecf2c2073-OUneX3.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/wp-includes/blocks/navigation/view.min.js
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: ≤{®”πéﬂ’#÷ËB)’/˝
+[2024-06-11 06:21:38] [class-ss-page.php:118] Checking Content Identical:b27ba805d3b9118edfd523f01fd6e84229d52ffd===. Value: FALSE
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/index.php/feed/
+[2024-06-11 06:21:38] [class-ss-task.php:58] [PAGES STATUS] Remaining:11; Total: 22
+[2024-06-11 06:21:38] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecf2eea0b-a5FlRa.tmp
+[2024-06-11 06:21:38] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/index.php/feed/?simply_static_page=12
+[2024-06-11 06:21:38] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/index.php/feed/?simply_static_page=12
+[2024-06-11 06:21:39] [class-ss-url-fetcher.php:103] Filesize: 1846 bytes
+[2024-06-11 06:21:39] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/rss+xml; charset=UTF-8
+[2024-06-11 06:21:39] [class-ss-url-fetcher.php:233] New filename for static page: /index.php/feed/index.xml
+[2024-06-11 06:21:39] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecf2eea0b-a5FlRa.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/index.php/feed/index.xml
+[2024-06-11 06:21:40] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:40] [class-ss-fetch-urls-task.php:159] Adding 5 URLs to the queue
+[2024-06-11 06:21:40] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:40] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: Üaﬁ.–Àës-_?Üt+ñW
+[2024-06-11 06:21:40] [class-ss-page.php:118] Checking Content Identical:8661de2ed0cb91732d1a5f3f86111c742b139657===. Value: FALSE
+[2024-06-11 06:21:41] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/index.php/comments/feed/
+[2024-06-11 06:21:41] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 22
+[2024-06-11 06:21:41] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:41] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecf510702-uAImH1.tmp
+[2024-06-11 06:21:41] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/index.php/comments/feed/?simply_static_page=13
+[2024-06-11 06:21:41] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/index.php/comments/feed/?simply_static_page=13
+[2024-06-11 06:21:41] [class-ss-url-fetcher.php:103] Filesize: 1766 bytes
+[2024-06-11 06:21:41] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/rss+xml; charset=UTF-8
+[2024-06-11 06:21:41] [class-ss-url-fetcher.php:233] New filename for static page: /index.php/comments/feed/index.xml
+[2024-06-11 06:21:41] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecf510702-uAImH1.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/index.php/comments/feed/index.xml
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:159] Adding 4 URLs to the queue
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: ¨⁄Ùﬁ4ö —	JzkπyîQeo
+[2024-06-11 06:21:42] [class-ss-page.php:118] Checking Content Identical:04acdaf4de14349a20d1094a7a6bb9799451656f===. Value: FALSE
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/wp-includes/blocks/navigation/style.min.css
+[2024-06-11 06:21:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 22
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecf68d9a2-TBuxj0.tmp
+[2024-06-11 06:21:42] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/wp-includes/blocks/navigation/style.min.css?simply_static_page=14
+[2024-06-11 06:21:42] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/wp-includes/blocks/navigation/style.min.css?simply_static_page=14
+[2024-06-11 06:21:42] [class-ss-url-fetcher.php:103] Filesize: 16484 bytes
+[2024-06-11 06:21:42] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-06-11 06:21:42] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/blocks/navigation/style.min.css
+[2024-06-11 06:21:42] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecf68d9a2-TBuxj0.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/wp-includes/blocks/navigation/style.min.css
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: ß^ﬂTB¡ñ÷p‰6¬ˆÏ’ï‰h
+[2024-06-11 06:21:42] [class-ss-page.php:118] Checking Content Identical:a75edf5442c196d670e436c2f616ecd595e41d68===. Value: FALSE
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/wp-includes/blocks/image/style.min.css
+[2024-06-11 06:21:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 22
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecf6c214b-0YMrJJ.tmp
+[2024-06-11 06:21:42] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/wp-includes/blocks/image/style.min.css?simply_static_page=15
+[2024-06-11 06:21:42] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/wp-includes/blocks/image/style.min.css?simply_static_page=15
+[2024-06-11 06:21:42] [class-ss-url-fetcher.php:103] Filesize: 7049 bytes
+[2024-06-11 06:21:42] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-06-11 06:21:42] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/blocks/image/style.min.css
+[2024-06-11 06:21:42] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecf6c214b-0YMrJJ.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/wp-includes/blocks/image/style.min.css
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: Z/∑zÔ÷œ¥¥i™LGº
+[2024-06-11 06:21:42] [class-ss-page.php:118] Checking Content Identical:105a2ff003b77aefd61ecfb419b4690caa4c47bc===. Value: FALSE
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/index.php/wp-json/
+[2024-06-11 06:21:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 22
+[2024-06-11 06:21:42] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecf6eea6c-B1Dgbh.tmp
+[2024-06-11 06:21:42] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/index.php/wp-json/?simply_static_page=16
+[2024-06-11 06:21:42] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/index.php/wp-json/?simply_static_page=16
+[2024-06-11 06:21:43] [class-ss-url-fetcher.php:103] Filesize: 186601 bytes
+[2024-06-11 06:21:43] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/json; charset=UTF-8
+[2024-06-11 06:21:43] [class-ss-url-fetcher.php:233] New filename for static page: /index.php/wp-json/index.html
+[2024-06-11 06:21:43] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecf6eea6c-B1Dgbh.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/index.php/wp-json/index.html
+[2024-06-11 06:21:44] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:44] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:44] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:44] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: ºâuŒ…öß„$‘íçh ö‹⁄
+[2024-06-11 06:21:44] [class-ss-page.php:118] Checking Content Identical:bc891275cec99aa7e324d4920b8d68ca039adcda===. Value: FALSE
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/xmlrpc.php
+[2024-06-11 06:21:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 22
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/vortex-engineering-website/xmlrpc.php
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/wp-includes/js/dist/interactivity.min.js
+[2024-06-11 06:21:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 22
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecf94d856-SfcswV.tmp
+[2024-06-11 06:21:45] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/wp-includes/js/dist/interactivity.min.js?simply_static_page=18
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/wp-includes/js/dist/interactivity.min.js?simply_static_page=18
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:103] Filesize: 35085 bytes
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/js/dist/interactivity.min.js
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecf94d856-SfcswV.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/wp-includes/js/dist/interactivity.min.js
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: î“-HóüFVÙixø‘∂zÎÏ
+[2024-06-11 06:21:45] [class-ss-page.php:118] Checking Content Identical:94d22d48979f46560d1c7ff46978bfd4b67aebec===. Value: FALSE
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/inter/Inter-VariableFont_slnt,wght.woff2
+[2024-06-11 06:21:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 22
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecf993497-DmlAjq.tmp
+[2024-06-11 06:21:45] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/inter/Inter-VariableFont_slnt,wght.woff2?simply_static_page=19
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/inter/Inter-VariableFont_slnt,wght.woff2?simply_static_page=19
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:103] Filesize: 326628 bytes
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: font/woff2
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/twentytwentyfour/assets/fonts/inter/Inter-VariableFont_slnt,wght.woff2
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecf993497-DmlAjq.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/wp-content/themes/twentytwentyfour/assets/fonts/inter/Inter-VariableFont_slnt,wght.woff2
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: @Tmø’ƒg√%}è:JÿØôïÆ∂
+[2024-06-11 06:21:45] [class-ss-page.php:118] Checking Content Identical:40546dbfd5c467c3257d8f3a4ad8af0d9995aeb6===. Value: FALSE
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_400.woff2
+[2024-06-11 06:21:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 22
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecf9cd1be-l8qPC1.tmp
+[2024-06-11 06:21:45] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_400.woff2?simply_static_page=20
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_400.woff2?simply_static_page=20
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:103] Filesize: 146060 bytes
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: font/woff2
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_400.woff2
+[2024-06-11 06:21:45] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecf9cd1be-l8qPC1.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_400.woff2
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:45] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: ∏joÛ˚Gweﬂ„|§Èõê!n
+[2024-06-11 06:21:45] [class-ss-page.php:118] Checking Content Identical:b86a6f0bf3fb4777160165dfe37ca4e99b90216e===. Value: FALSE
+[2024-06-11 06:21:46] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_italic_400.woff2
+[2024-06-11 06:21:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 22
+[2024-06-11 06:21:46] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecfa17d75-lw19DE.tmp
+[2024-06-11 06:21:46] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_italic_400.woff2?simply_static_page=21
+[2024-06-11 06:21:46] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_italic_400.woff2?simply_static_page=21
+[2024-06-11 06:21:46] [class-ss-url-fetcher.php:103] Filesize: 105184 bytes
+[2024-06-11 06:21:46] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: font/woff2
+[2024-06-11 06:21:46] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_italic_400.woff2
+[2024-06-11 06:21:46] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecfa17d75-lw19DE.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_italic_400.woff2
+[2024-06-11 06:21:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:46] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: ﬂˆå@'œB`Wò°ﬁF†a—`£
+[2024-06-11 06:21:46] [class-ss-page.php:118] Checking Content Identical:0fdff68c4027cf421d605798a1de46a061d160a3===. Value: FALSE
+[2024-06-11 06:21:46] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_700.woff2
+[2024-06-11 06:21:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 22
+[2024-06-11 06:21:46] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecfa4b910-vj7RUY.tmp
+[2024-06-11 06:21:46] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_700.woff2?simply_static_page=22
+[2024-06-11 06:21:46] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_700.woff2?simply_static_page=22
+[2024-06-11 06:21:46] [class-ss-url-fetcher.php:103] Filesize: 132564 bytes
+[2024-06-11 06:21:46] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: font/woff2
+[2024-06-11 06:21:46] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_700.woff2
+[2024-06-11 06:21:46] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ecfa4b910-vj7RUY.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_700.woff2
+[2024-06-11 06:21:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:46] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: ‹V¯0è3Ö¥'ŒÖ¬ö¸G·|`
+[2024-06-11 06:21:46] [class-ss-page.php:118] Checking Content Identical:dc56f8308f3385b427ce85c20b9afc471be17c60===. Value: FALSE
+[2024-06-11 06:21:46] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 2 of 22 pages/files
+[2024-06-11 06:21:46] [class-ss-archive-creation-job.php:181] We're not done with the fetch_urls task yet
+[2024-06-11 06:21:49] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
+[2024-06-11 06:21:49] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
+[2024-06-11 06:21:49] [class-ss-fetch-urls-task.php:69] Total pages: 32; Pages remaining: 10
+[2024-06-11 06:21:49] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/wp-admin/
+[2024-06-11 06:21:49] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 32
+[2024-06-11 06:21:49] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:49] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ecfd7cd18-L4rLe7.tmp
+[2024-06-11 06:21:49] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/wp-admin/?simply_static_page=23
+[2024-06-11 06:21:49] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/wp-admin/?simply_static_page=23
+[2024-06-11 06:21:50] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2024-06-11 06:21:50] [class-ss-url-fetcher.php:119] http_status_code: 302 | content_type: text/html; charset=UTF-8
+[2024-06-11 06:21:50] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-06-11 06:21:50] [class-ss-fetch-urls-task.php:205] redirect_url: http://localhost/vortex-engineering-website/wp-login.php?redirect_to=http%3A%2F%2Flocalhost%2Fvortex-engineering-website%2Fwp-admin%2F%3Fsimply_static_page%3D23&reauth=1
+[2024-06-11 06:21:50] [class-ss-fetch-urls-task.php:232] Redirect URL is on the same domain; adding the URL to the queue
+[2024-06-11 06:21:50] [class-ss-fetch-urls-task.php:244] Creating a redirect page
+[2024-06-11 06:21:50] [class-ss-url-fetcher.php:233] New filename for static page: /wp-admin/index.html
+[2024-06-11 06:21:50] [class-ss-page.php:118] Checking Content Identical:bde739431e060776c19b429315516d215cf43071===. Value: FALSE
+[2024-06-11 06:21:51] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/index.php/sample-page/feed/
+[2024-06-11 06:21:52] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 32
+[2024-06-11 06:21:52] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:52] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ed002e09c-9wCK8U.tmp
+[2024-06-11 06:21:52] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/index.php/sample-page/feed/?simply_static_page=24
+[2024-06-11 06:21:52] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/index.php/sample-page/feed/?simply_static_page=24
+[2024-06-11 06:21:53] [class-ss-url-fetcher.php:103] Filesize: 789 bytes
+[2024-06-11 06:21:53] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/rss+xml; charset=UTF-8
+[2024-06-11 06:21:53] [class-ss-url-fetcher.php:233] New filename for static page: /index.php/sample-page/feed/index.xml
+[2024-06-11 06:21:53] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ed002e09c-9wCK8U.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/index.php/sample-page/feed/index.xml
+[2024-06-11 06:21:53] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:53] [class-ss-fetch-urls-task.php:159] Adding 2 URLs to the queue
+[2024-06-11 06:21:53] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:53] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: zÈïK»≈Rm’:+·Ûb
+[2024-06-11 06:21:53] [class-ss-page.php:118] Checking Content Identical:7ae91d954bc81dc5035216016dd53a2be1f3621d===. Value: FALSE
+[2024-06-11 06:21:53] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/index.php/wp-json/wp/v2/pages/2
+[2024-06-11 06:21:53] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 32
+[2024-06-11 06:21:53] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:53] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ed014b2c2-rZnAVB.tmp
+[2024-06-11 06:21:53] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/index.php/wp-json/wp/v2/pages/2?simply_static_page=25
+[2024-06-11 06:21:53] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/index.php/wp-json/wp/v2/pages/2?simply_static_page=25
+[2024-06-11 06:21:54] [class-ss-url-fetcher.php:103] Filesize: 3100 bytes
+[2024-06-11 06:21:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/json; charset=UTF-8
+[2024-06-11 06:21:54] [class-ss-url-fetcher.php:233] New filename for static page: /index.php/wp-json/wp/v2/pages/2\index.html
+[2024-06-11 06:21:54] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ed014b2c2-rZnAVB.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/index.php/wp-json/wp/v2/pages/2\index.html
+[2024-06-11 06:21:54] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:54] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:54] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:54] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: wÎpöl&Y3Àº©HÉ›ÁäOià
+[2024-06-11 06:21:54] [class-ss-page.php:118] Checking Content Identical:77eb709a6c265933cbbca94883dde78a0a4f6988===. Value: FALSE
+[2024-06-11 06:21:54] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/index.php/wp-json/oembed/1.0/embed
+[2024-06-11 06:21:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 32
+[2024-06-11 06:21:54] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ed027539e-GQZ3bK.tmp
+[2024-06-11 06:21:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/index.php/wp-json/oembed/1.0/embed?simply_static_page=26
+[2024-06-11 06:21:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/index.php/wp-json/oembed/1.0/embed?simply_static_page=26
+[2024-06-11 06:21:55] [class-ss-url-fetcher.php:103] Filesize: 115 bytes
+[2024-06-11 06:21:55] [class-ss-url-fetcher.php:119] http_status_code: 400 | content_type: application/json; charset=UTF-8
+[2024-06-11 06:21:55] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-06-11 06:21:55] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/wp-includes/js/comment-reply.min.js
+[2024-06-11 06:21:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 32
+[2024-06-11 06:21:55] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ed03bd393-xVdAGm.tmp
+[2024-06-11 06:21:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/wp-includes/js/comment-reply.min.js?simply_static_page=27
+[2024-06-11 06:21:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/wp-includes/js/comment-reply.min.js?simply_static_page=27
+[2024-06-11 06:21:55] [class-ss-url-fetcher.php:103] Filesize: 2981 bytes
+[2024-06-11 06:21:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2024-06-11 06:21:55] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/js/comment-reply.min.js
+[2024-06-11 06:21:55] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ed03bd393-xVdAGm.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/wp-includes/js/comment-reply.min.js
+[2024-06-11 06:21:55] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:55] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:55] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:55] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: €6ßj™ cøæ¿,,ñt8≈¢E
+[2024-06-11 06:21:55] [class-ss-page.php:118] Checking Content Identical:db36a77f6aaa2063bfbec02c2c0e967438c5a245===. Value: FALSE
+[2024-06-11 06:21:55] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/index.php/2024/06/11/hello-world/feed/
+[2024-06-11 06:21:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 32
+[2024-06-11 06:21:55] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ed03e6a4d-l0IJAZ.tmp
+[2024-06-11 06:21:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/index.php/2024/06/11/hello-world/feed/?simply_static_page=28
+[2024-06-11 06:21:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/index.php/2024/06/11/hello-world/feed/?simply_static_page=28
+[2024-06-11 06:21:56] [class-ss-url-fetcher.php:103] Filesize: 1785 bytes
+[2024-06-11 06:21:56] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/rss+xml; charset=UTF-8
+[2024-06-11 06:21:56] [class-ss-url-fetcher.php:233] New filename for static page: /index.php/2024/06/11/hello-world/feed/index.xml
+[2024-06-11 06:21:56] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ed03e6a4d-l0IJAZ.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/index.php/2024/06/11/hello-world/feed/index.xml
+[2024-06-11 06:21:56] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:56] [class-ss-fetch-urls-task.php:159] Adding 3 URLs to the queue
+[2024-06-11 06:21:57] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:57] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: ‘¸|âôt3EŸ·÷yﬂ˛NÏ
+[2024-06-11 06:21:57] [class-ss-page.php:118] Checking Content Identical:d4fc7c0b8999740c331745d9e1d679df01fe4eec===. Value: FALSE
+[2024-06-11 06:21:57] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/wp-includes/css/dist/block-library/common.min.css
+[2024-06-11 06:21:57] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 32
+[2024-06-11 06:21:57] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:57] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ed0537dfc-kwCipc.tmp
+[2024-06-11 06:21:57] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/wp-includes/css/dist/block-library/common.min.css?simply_static_page=29
+[2024-06-11 06:21:57] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/wp-includes/css/dist/block-library/common.min.css?simply_static_page=29
+[2024-06-11 06:21:57] [class-ss-url-fetcher.php:103] Filesize: 3503 bytes
+[2024-06-11 06:21:57] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-06-11 06:21:57] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/css/dist/block-library/common.min.css
+[2024-06-11 06:21:57] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ed0537dfc-kwCipc.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/wp-includes/css/dist/block-library/common.min.css
+[2024-06-11 06:21:57] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:57] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:57] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:57] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: ‚&7µ÷ÆzAä‚–»£b∑˙
+[2024-06-11 06:21:57] [class-ss-page.php:118] Checking Content Identical:e22637b50dd6ae1c1f7a418ae2d0c803a362b7fa===. Value: FALSE
+[2024-06-11 06:21:57] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/index.php/wp-json/wp/v2/posts/1
+[2024-06-11 06:21:57] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 32
+[2024-06-11 06:21:57] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:57] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ed05597ba-AU48bT.tmp
+[2024-06-11 06:21:57] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/index.php/wp-json/wp/v2/posts/1?simply_static_page=30
+[2024-06-11 06:21:57] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/index.php/wp-json/wp/v2/posts/1?simply_static_page=30
+[2024-06-11 06:21:57] [class-ss-url-fetcher.php:103] Filesize: 2078 bytes
+[2024-06-11 06:21:57] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/json; charset=UTF-8
+[2024-06-11 06:21:57] [class-ss-url-fetcher.php:233] New filename for static page: /index.php/wp-json/wp/v2/posts/1\index.html
+[2024-06-11 06:21:57] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ed05597ba-AU48bT.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/index.php/wp-json/wp/v2/posts/1\index.html
+[2024-06-11 06:21:58] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:21:58] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:21:58] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:21:58] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: .r©¸ç∞Á_µÁÿ˚	UKc.y+¬
+[2024-06-11 06:21:58] [class-ss-page.php:118] Checking Content Identical:2e72a9fc8db0e75fb5e7d8fb09554b632e792bc2===. Value: FALSE
+[2024-06-11 06:21:58] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/index.php/author/vortex/feed/
+[2024-06-11 06:21:58] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 32
+[2024-06-11 06:21:58] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:21:58] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ed06abd59-cVAUOq.tmp
+[2024-06-11 06:21:58] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/index.php/author/vortex/feed/?simply_static_page=31
+[2024-06-11 06:21:58] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/index.php/author/vortex/feed/?simply_static_page=31
+[2024-06-11 06:21:59] [class-ss-url-fetcher.php:103] Filesize: 1875 bytes
+[2024-06-11 06:21:59] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/rss+xml; charset=UTF-8
+[2024-06-11 06:21:59] [class-ss-url-fetcher.php:233] New filename for static page: /index.php/author/vortex/feed/index.xml
+[2024-06-11 06:21:59] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ed06abd59-cVAUOq.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/index.php/author/vortex/feed/index.xml
+[2024-06-11 06:22:00] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:22:00] [class-ss-fetch-urls-task.php:159] Adding 5 URLs to the queue
+[2024-06-11 06:22:00] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:22:00] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: YkπS¯Ô_„ZÅÎväoRÕZ_
+[2024-06-11 06:22:00] [class-ss-page.php:118] Checking Content Identical:596bb953f8ef5fe35a81eb768a156f52cd5a5f16===. Value: FALSE
+[2024-06-11 06:22:00] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/index.php/wp-json/wp/v2/users/1
+[2024-06-11 06:22:00] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 32
+[2024-06-11 06:22:00] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-06-11 06:22:00] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ed08a2fde-Z40glg.tmp
+[2024-06-11 06:22:00] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/index.php/wp-json/wp/v2/users/1?simply_static_page=32
+[2024-06-11 06:22:00] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/index.php/wp-json/wp/v2/users/1?simply_static_page=32
+[2024-06-11 06:22:01] [class-ss-url-fetcher.php:103] Filesize: 708 bytes
+[2024-06-11 06:22:01] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/json; charset=UTF-8
+[2024-06-11 06:22:01] [class-ss-url-fetcher.php:233] New filename for static page: /index.php/wp-json/wp/v2/users/1\index.html
+[2024-06-11 06:22:01] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ed08a2fde-Z40glg.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870/index.php/wp-json/wp/v2/users/1\index.html
+[2024-06-11 06:22:02] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2024-06-11 06:22:02] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2024-06-11 06:22:02] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2024-06-11 06:22:02] [class-ss-fetch-urls-task.php:172] SHA1 BINARY: çÅ8˝’]£˚'∑ä„âºöÂqZ)
+[2024-06-11 06:22:02] [class-ss-page.php:118] Checking Content Identical:8d8138fdd55da3fb27b78ae389bc9ae571085a29===. Value: FALSE
+[2024-06-11 06:22:02] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 22 of 32 pages/files
+[2024-06-11 06:22:02] [class-ss-archive-creation-job.php:181] We're not done with the fetch_urls task yet
+[2024-06-11 06:22:02] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
+[2024-06-11 06:22:02] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
+[2024-06-11 06:22:02] [class-ss-fetch-urls-task.php:69] Total pages: 33; Pages remaining: 1
+[2024-06-11 06:22:02] [class-ss-fetch-urls-task.php:72] URL: http://localhost/vortex-engineering-website/wp-login.php?redirect_to=http%3A%2F%2Flocalhost%2Fvortex-engineering-website%2Fwp-admin%2F%3Fsimply_static_page%3D23&reauth=1
+[2024-06-11 06:22:02] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 33
+[2024-06-11 06:22:02] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/vortex-engineering-website/wp-login.php?redirect_to=http%3A%2F%2Flocalhost%2Fvortex-engineering-website%2Fwp-admin%2F%3Fsimply_static_page%3D23&reauth=1
+[2024-06-11 06:22:02] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2024-06-11 06:22:02] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 32 of 33 pages/files
+[2024-06-11 06:22:02] [class-ss-archive-creation-job.php:181] We're not done with the fetch_urls task yet
+[2024-06-11 06:22:02] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
+[2024-06-11 06:22:02] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
+[2024-06-11 06:22:02] [class-ss-fetch-urls-task.php:69] Total pages: 33; Pages remaining: 0
+[2024-06-11 06:22:02] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 33 of 33 pages/files
+[2024-06-11 06:22:02] [class-ss-archive-creation-job.php:175] We've found our next task: generate_404
+[2024-06-11 06:22:02] [class-ss-archive-creation-job.php:136] Current task: generate_404
+[2024-06-11 06:22:02] [class-ss-archive-creation-job.php:153] Performing task: generate_404
+[2024-06-11 06:22:02] [class-ss-task.php:44] Status message: [generate_404] Generating 404 Page.
+[2024-06-11 06:22:02] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nayan\AppData\Local\Temp/6667ed0ae5585-EcvAK4.tmp
+[2024-06-11 06:22:02] [class-ss-page-handler.php:38] URL Prepared:http://localhost/vortex-engineering-website/1718086923?simply_static_page=0
+[2024-06-11 06:22:02] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/vortex-engineering-website/1718086923?simply_static_page=0
+[2024-06-11 06:22:04] [class-ss-url-fetcher.php:103] Filesize: 57415 bytes
+[2024-06-11 06:22:04] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2024-06-11 06:22:04] [class-ss-url-fetcher.php:233] New filename for static page: 404/index.html
+[2024-06-11 06:22:04] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\nayan\AppData\Local\Temp/6667ed0ae5585-EcvAK4.tmp to C:\xampp\htdocs\Vortex-Engineering-website/wp-content/uploads\simply-static\temp-files/simply-static-1-1718086870\404/index.html
+[2024-06-11 06:22:04] [class-ss-generate-404-task.php:119] Replacing URLs in the static file
+[2024-06-11 06:22:06] [class-ss-generate-404-task.php:125] We're saving this URL; keeping the static file
+[2024-06-11 06:22:06] [class-ss-page.php:118] Checking Content Identical:c9d4ae0632459d1dede7b4cee8f39af23852233a===. Value: FALSE
+[2024-06-11 06:22:06] [class-ss-task.php:44] Status message: [generate_404] 404 Page generated
+[2024-06-11 06:22:08] [class-ss-archive-creation-job.php:175] We've found our next task: transfer_files_locally
+[2024-06-11 06:22:09] [class-ss-archive-creation-job.php:136] Current task: transfer_files_locally
+[2024-06-11 06:22:09] [class-ss-archive-creation-job.php:153] Performing task: transfer_files_locally
+[2024-06-11 06:22:09] [class-ss-task.php:44] Status message: [transfer_files_locally] Transferring 27 of 27 files
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/index.php/sample-page
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:104] Cannot create directory: C:/xampp/htdocs/Vortex-Engineering-website/index.php/sample-page
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/index.php/2024/06/11/hello-world
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:104] Cannot create directory: C:/xampp/htdocs/Vortex-Engineering-website/index.php/2024/06/11/hello-world
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/index.php/author/vortex
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:104] Cannot create directory: C:/xampp/htdocs/Vortex-Engineering-website/index.php/author/vortex
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/wp-content/themes/twentytwentyfour/assets/images
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/wp-content/themes/twentytwentyfour/assets/images
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/wp-content/themes/twentytwentyfour/assets/images
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/wp-includes/blocks/navigation
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/index.php/feed
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:104] Cannot create directory: C:/xampp/htdocs/Vortex-Engineering-website/index.php/feed
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/index.php/comments/feed
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:104] Cannot create directory: C:/xampp/htdocs/Vortex-Engineering-website/index.php/comments/feed
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/wp-includes/blocks/navigation
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/wp-includes/blocks/image
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/index.php/wp-json
+[2024-06-11 06:22:09] [class-ss-transfer-files-locally-task.php:104] Cannot create directory: C:/xampp/htdocs/Vortex-Engineering-website/index.php/wp-json
+[2024-06-11 06:22:10] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/wp-includes/js/dist
+[2024-06-11 06:22:10] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/inter
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/cardo
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/cardo
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/wp-content/themes/twentytwentyfour/assets/fonts/cardo
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/wp-admin
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/index.php/sample-page/feed
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:104] Cannot create directory: C:/xampp/htdocs/Vortex-Engineering-website/index.php/sample-page/feed
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/index.php/wp-json/wp/v2/pages
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:104] Cannot create directory: C:/xampp/htdocs/Vortex-Engineering-website/index.php/wp-json/wp/v2/pages
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/wp-includes/js
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/index.php/2024/06/11/hello-world/feed
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:104] Cannot create directory: C:/xampp/htdocs/Vortex-Engineering-website/index.php/2024/06/11/hello-world/feed
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/wp-includes/css/dist/block-library
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/index.php/wp-json/wp/v2/posts
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:104] Cannot create directory: C:/xampp/htdocs/Vortex-Engineering-website/index.php/wp-json/wp/v2/posts
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/index.php/author/vortex/feed
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:104] Cannot create directory: C:/xampp/htdocs/Vortex-Engineering-website/index.php/author/vortex/feed
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:102] Trying to transfer: C:/xampp/htdocs/Vortex-Engineering-website/index.php/wp-json/wp/v2/users
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:104] Cannot create directory: C:/xampp/htdocs/Vortex-Engineering-website/index.php/wp-json/wp/v2/users
+[2024-06-11 06:22:11] [class-ss-transfer-files-locally-task.php:73] [Transfer] Total Pages:27. Processed Pages: 27
+[2024-06-11 06:22:11] [class-ss-task.php:44] Status message: [transfer_files_locally] Transferred 27 of 27 files
+[2024-06-11 06:22:12] [trait-can-process-pages.php:103] Total pages: 27; Pages remaining: 0
+[2024-06-11 06:22:12] [class-ss-transfer-files-locally-task.php:238] Transferring 404 Page
+[2024-06-11 06:22:12] [class-ss-transfer-files-locally-task.php:257] Destination 404 Page found at C:/xampp/htdocs/Vortex-Engineering-website\404\index.html
+[2024-06-11 06:22:12] [class-ss-transfer-files-locally-task.php:261] Success
+[2024-06-11 06:22:12] [class-ss-task.php:44] Status message: [destination_url] Destination URL: <a href="https://vortexengineer.github.io/Vortex-Engineering-website/" target="_blank">https://vortexengineer.github.io/Vortex-Engineering-website/</a>
+[2024-06-11 06:22:12] [class-ss-archive-creation-job.php:175] We've found our next task: wrapup
+[2024-06-11 06:22:12] [class-ss-archive-creation-job.php:136] Current task: wrapup
+[2024-06-11 06:22:12] [class-ss-archive-creation-job.php:153] Performing task: wrapup
+[2024-06-11 06:22:12] [class-ss-wrapup-task.php:22] Deleting temporary files
+[2024-06-11 06:22:12] [class-ss-task.php:44] Status message: [wrapup] Wrapping up
+[2024-06-11 06:22:12] [class-ss-archive-creation-job.php:170] This task is done and there are no more tasks, time to complete the job
+[2024-06-11 06:22:12] [class-ss-archive-creation-job.php:197] Completing the job
+[2024-06-11 06:22:12] [class-ss-archive-creation-job.php:324] Status message: [done] Done! Finished in 00:01:02
